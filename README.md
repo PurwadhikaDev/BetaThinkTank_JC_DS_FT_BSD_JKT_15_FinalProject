@@ -25,16 +25,16 @@ Setelah mengetahui permasalahan business nya, kita bisa menargetkan tujuan kita 
 2. Melakukan customer segmentasi menggunakan RFM analysis dan membuat model clustering untuk memprediksi cluster yang di targetkan. 
 3. Memberikan insight dan rekomendasi yang dapat membantu tim bisnis dan tim pemasaran untuk meningkatkan repurchasing. 
 
+## Data Overview
+Data Ecommerce Olist yang kami analysis ini berasal dari Kaggle, data ini terdiri dari 8 data set yang berbeda. Setelah kita lakukan proses merge atau penggabungan antar dataset sesuai dengan petunjuk dari schema data set ini, terdapat 44 kolom dan 119.143 baris.
+![alt text](https://i.imgur.com/HRhd2Y0.png)
+
 ## Data Preprocess dan Cleaning
  Sekarang kita masuk kedalam process data cleaning dan data preprocessing, pada tahap ini kami akan membersihkan data, memilih kolom yang digunakan dan mempersiapkan data untuk keperluan clustering. 
  berikut process cleaning dan preprocessing nya:
  1. Handling Missing values -> Drop, karena missinga value antar kolomnya saling berkorelasi dan tipe data dari missing value nya adalah tipe data timestamp sehingga sulit untuk mengisi missing value.
  2. Check & remove Duplicate -> 15.256 -> Drop, karena dapat mengganggu nilai payment value customer tersebut.
  3. Handling outliers -> Tidak dilakukan treatment apapun, karena karena menurut kami pada dataset ini outlier nya dapat memberikan insight yang baik bukan mengganggu analysis.
-
-## Data Overview
-Data Ecommerce Olist yang kami analysis ini berasal dari Kaggle, data ini terdiri dari 8 data set yang berbeda. Setelah kita lakukan proses merge atau penggabungan antar dataset sesuai dengan petunjuk dari schema data set ini, terdapat 44 kolom dan 119.143 baris.
-![alt text](https://i.imgur.com/HRhd2Y0.png)
 
 ## Data Selected
 Setelah penggabungkan dataset, kami memilih 20 kolom yang berasal dari data customer, data payment, data seller dan data location. Meskipun untuk melakukan market segmentasi kita hanya membutuhkan data yang berkaitan dengan customer, disini kami memutuskan untuk memasukan data seller dan lokasi untuk bisa memberikan insight tambahan kepada kami.
